@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClothesShop</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome -->
+    <script defer src="/assets/fontawesome/solid.js"></script>
+    <script defer src="/assets/fontawesome/brands.js"></script>
+    <script defer src="/assets/fontawesome/fontawesome.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Top nav -->
+    <section class="information">
+      <div class="contact">
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> 01632 960877</li>
+          <li>
+            <i class="fa-solid fa-envelope"></i> <a href=""> info@shop.co.uk</a>
+          </li>
+        </ul>
+      </div>
+      <div class="socials">
+        <ul>
+          <li>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="/index.html">Clothes<span>Shop</span></a>
+        </div>
+        <nav>
+          <div class="navbar">
+            <ul>
+              <li><a href="/index.html" class="active">Home</a></li>
+              <li><a href="">Women</a></li>
+              <li><a href="">Men</a></li>
+              <li><a href="">Kids</a></li>
+              <li><a href="">Jewellery</a></li>
+              <li><a href="">Accessories</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="search">
+          <div class="fa-2x">
+            <span class="fa-layers fa-fw">
+              <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href=""
+                ><span
+                  id="cartAmount"
+                  class="fa-layers-counter"
+                  style="background: hotpink"
+                  >0</span
+                ></a
+              >
+            </span>
+          </div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="hamburger" onclick="toggleMobileMenu(this)">
+          <i class="fa-solid fa-bars"></i>
+          <div class="mobile-menu">
+            <ul>
+              <li><a href="" class="active">Home</a></li>
+              <li><a href="">Women</a></li>
+              <li><a href="">Men</a></li>
+              <li><a href="">Kids</a></li>
+              <li><a href="">Jewellery</a></li>
+              <li><a href="">Accessories</a></li>
+            </ul>
+            <div class="search-mobile">
+              <div class="fa-2x">
+                <span class="fa-layers fa-fw">
+                  <a href="/cart.html"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                  ></a>
+                  <a href=""
+                    ><span class="fa-layers-counter" style="background: blue"
+                      >0</span
+                    ></a
+                  >
+                </span>
+              </div>
+              <form class="example" action="action_page.php">
+                <input type="text" placeholder="Search" name="search" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-image">
+      <div class="hero-text">
+        <h1>
+          Dress to <span>Impress</span><br />
+          For <span>Less</span>
+        </h1>
+        <button type="button">Shop Now</button>
+      </div>
+    </section>
+
+    <!-- Best Sellers -->
+
+    <section class="best-sellers">
+      <aside class="featured">
+        <h1>BEST SELLERS</h1>
+        <h3>Our featured pieces</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+          recusandae quo reiciendis perspiciatis tempora cum ea nemo in rem at!
+        </p>
+      </aside>
+      <!-- Featured products -->
+      <div class="product-card">
+        <img
+          src="/products/camel-long-sleeve-relaxed-fit-blazer.jpg"
+          alt=""
+          style="width: 100%"
+        />
+        <div class="overlay">
+          <ul>
+            <li><i class="fa-solid fa-cart-shopping"></i></li>
+            <li><i class="fa-solid fa-heart"></i></li>
+            <li><i class="fa-solid fa-share"></i></li>
+          </ul>
+        </div>
+        <h2>Camel blazer</h2>
+        <p class="price">£20.00</p>
+        <div class="stars">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="/products/black-tie-waist-button-front-pleated-hem-mini-shirt-dress.jpg"
+          alt=""
+          style="width: 100%"
+        />
+        <div class="overlay">
+          <ul>
+            <li><i class="fa-solid fa-cart-shopping"></i></li>
+            <li><i class="fa-solid fa-heart"></i></li>
+            <li><i class="fa-solid fa-share"></i></li>
+          </ul>
+        </div>
+        <h2>Black Tie Dress</h2>
+        <p class="price">£10.00</p>
+        <div class="stars">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="/products/rust-relaxed-fit-suit-jacket.jpg"
+          alt=""
+          style="width: 100%"
+        />
+        <div class="overlay">
+          <ul>
+            <li><i class="fa-solid fa-cart-shopping"></i></li>
+            <li><i class="fa-solid fa-heart"></i></li>
+            <li><i class="fa-solid fa-share"></i></li>
+          </ul>
+        </div>
+        <h2>Rust Suit Jacket</h2>
+        <p class="price">£35.00</p>
+        <div class="stars">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="/products/pink-floral-revere-collar-shirt.jpg"
+          alt=""
+          style="width: 100%"
+        />
+        <div class="overlay">
+          <ul>
+            <li><i class="fa-solid fa-cart-shopping"></i></li>
+            <li><i class="fa-solid fa-heart"></i></li>
+            <li><i class="fa-solid fa-share"></i></li>
+          </ul>
+        </div>
+        <h2>Pink Floral Shirt</h2>
+        <p class="price">£35.00</p>
+        <div class="stars">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+
+    <section class="services">
+      <div class="offers">
+        <i class="fa-solid fa-gem"></i>
+        <h3>Special Offers</h3>
+        <p>Shop big, save big</p>
+      </div>
+
+      <div class="offers">
+        <i class="fa-solid fa-paper-plane"></i>
+        <h3>Free Delivery</h3>
+        <p>On orders above £50</p>
+      </div>
+
+      <div class="offers">
+        <i class="fa-solid fa-arrows-rotate"></i>
+        <h3>30 Day Return</h3>
+        <p>Generous returns policy</p>
+      </div>
+
+      <div class="offers">
+        <i class="fa-solid fa-rocket"></i>
+        <h3>Fastest Shipping</h3>
+        <p>2 days express</p>
+      </div>
+    </section>
+
+    <!-- Deals -->
+    <section class="dealsRow">
+      <div class="dealColumn">
+        <img src="/img/deal1.png" alt="" />
+      </div>
+
+      <div class="dealColumn">
+        <img src="/img/deal3.png" alt="" />
+      </div>
+
+      <div class="dealColumn">
+        <img src="/img/deal2.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Pop up -->
+
+    <!-- <div class="popup">
+      <div class="popuptext" id="cartPopup">
+        <p>Added to cart! <i class="fa-solid fa-square-check"></i></p>
+        <span class="close">&times;</span>
+      </div>
+    </div> -->
+
+    <!-- Featured items -->
+
+    <section class="featureditems">
+      <!-- Featured items title -->
+      <h1>FEATURED PRODUCTS</h1>
+      <h3>Newest trends from top brands</h3>
+
+      <!-- Product cards -->
+
+      <div class="featured-products" id="shop"></div>
+    </section>
+
+    <!-- Discount code and awards -->
+
+    <section class="misc">
+      <div class="row">
+        <div class="column discount">
+          <h2>Get our special discount</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta
+            accusamus distinctio? Praesentium nam laudantium error voluptatum
+            obcaecati, voluptate magnam.
+          </p>
+
+          <form action="/action_page.php">
+            <input
+              class="email"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter email address"
+            />
+            <input type="submit" class="coupon" value="Get Coupon Now" />
+          </form>
+        </div>
+        <div class="column awards">
+          <img src="/img/award1.png" alt="" />
+          <img src="/img/award2.png" alt="" />
+          <img src="/img/award3.png" alt="" />
+          <img src="/img/award4.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="footer-top">
+        <div class="top-text">
+          <p>
+            We're confident we provide our customers with the best service.
+            Please keep in touch!
+          </p>
+        </div>
+        <div class="social-icons">
+          <ul>
+            <li>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-row">
+        <div class="footer-column">
+          <h3>Information</h3>
+          <ul>
+            <li>Delivery Information</li>
+            <li>Discount</li>
+            <li>Site Map</li>
+            <li>Privacy Policy</li>
+            <li>My Account</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>My Account</h3>
+          <ul>
+            <li>Sign In</li>
+            <li>View Cart</li>
+            <li>My Wishlist</li>
+            <li>Checkout</li>
+            <li>My Offers</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Help</h3>
+          <ul>
+            <li>FAQ</li>
+            <li>Shipping</li>
+            <li>Contact Us</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li>Address: 123 Fake Street</li>
+            <li>Tel: 01632 960877</li>
+            <li>Email: info@clothesshop.co.uk</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>
+        Copyright 2023 ClothesShop, all rights reserved - Design by BeeStudios,
+        built by Nicole Forbes
+      </p>
+    </div>
+    <script src="/javascript/data.js"></script>
+
+    <script src="/javascript/script.js"></script>
+  </body>
+</html>

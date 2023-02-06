@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Cart</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome -->
+    <script defer src="/assets/fontawesome/solid.js"></script>
+    <script defer src="/assets/fontawesome/brands.js"></script>
+    <script defer src="/assets/fontawesome/fontawesome.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <section class="information">
+      <div class="contact">
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> 01632 960877</li>
+          <li>
+            <i class="fa-solid fa-envelope"></i> <a href=""> info@shop.co.uk</a>
+          </li>
+        </ul>
+      </div>
+      <div class="socials">
+        <ul>
+          <li>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="/index.html">Clothes<span>Shop</span></a>
+        </div>
+        <nav>
+          <div class="navbar">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="">Women</a></li>
+              <li><a href="">Men</a></li>
+              <li><a href="">Kids</a></li>
+              <li><a href="">Jewellery</a></li>
+              <li><a href="">Accessories</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="search">
+          <div class="fa-2x">
+            <span class="fa-layers fa-fw">
+              <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href=""
+                ><span
+                  id="cartAmount"
+                  class="fa-layers-counter"
+                  style="background: hotpink"
+                  >0</span
+                ></a
+              >
+            </span>
+          </div>
+          <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div class="hamburger" onclick="toggleMobileMenu(this)">
+          <i class="fa-solid fa-bars"></i>
+          <div class="mobile-menu">
+            <ul>
+              <li><a href="" class="active">Home</a></li>
+              <li><a href="">Women</a></li>
+              <li><a href="">Men</a></li>
+              <li><a href="">Kids</a></li>
+              <li><a href="">Jewellery</a></li>
+              <li><a href="">Accessories</a></li>
+            </ul>
+            <div class="search-mobile">
+              <div class="fa-2x">
+                <span class="fa-layers fa-fw">
+                  <a href="/cart.html"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                  ></a>
+                  <a href=""
+                    ><span class="fa-layers-counter" style="background: blue"
+                      >0</span
+                    ></a
+                  >
+                </span>
+              </div>
+              <form class="example" action="action_page.php">
+                <input type="text" placeholder="Search" name="search" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Cart table -->
+
+    <section id="cart-container" class="cart-container">
+      <table class="cart-table" id="cart-table">
+        <thead class="header" id="cartHeader">
+          <tr>
+            <td class="productHeader">Product</td>
+            <td>Quantity</td>
+            <td>Price</td>
+            <td>Total</td>
+          </tr>
+        </thead>
+        <tbody id="cartBody">
+          <td><a href="#"></a></td>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Checkout and clear items button -->
+
+    <section class="cart-buttons">
+      <button class="checkout">Checkout</button>
+      <button class="clear" onclick="clearCart()">Clear Cart</button>
+    </section>
+
+    <!-- This is the bottom of the cart, for coupon codes and the grand total -->
+
+    <section class="cart-bottom" id="cartBottom">
+      <div class="couponRow">
+        <div class="couponcode">
+          <h3>Use Coupon Code</h3>
+          <p>Enter your coupon code here</p>
+          <input class="couponenter" type="text" placeholder="Coupon Code" />
+          <button>Apply Coupon</button>
+        </div>
+      </div>
+
+      <div class="totalRow" id="totalRow">
+        <div>
+          <h3>Cart Total</h3>
+          <div class="subtotal" id="subTotal"></div>
+
+          <div class="shipping">
+            <h4>Shipping</h4>
+            <p>Free</p>
+          </div>
+          <hr class="break" />
+
+          <div class="grandtotal" id="grandTotal"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-top">
+        <div class="top-text">
+          <p>
+            We're confident we provide our customers with the best service.
+            Please keep in touch!
+          </p>
+        </div>
+        <div class="social-icons">
+          <ul>
+            <li>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-row">
+        <div class="footer-column">
+          <h3>Information</h3>
+          <ul>
+            <li>Delivery Information</li>
+            <li>Discount</li>
+            <li>Site Map</li>
+            <li>Privacy Policy</li>
+            <li>My Account</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>My Account</h3>
+          <ul>
+            <li>Sign In</li>
+            <li>View Cart</li>
+            <li>My Wishlist</li>
+            <li>Checkout</li>
+            <li>My Offers</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Help</h3>
+          <ul>
+            <li>FAQ</li>
+            <li>Shipping</li>
+            <li>Contact Us</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li>Address: 123 Fake Street</li>
+            <li>Tel: 01632 960877</li>
+            <li>Email: info@clothesshop.co.uk</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>
+        Copyright 2023 ClothesShop, all rights reserved - Design by BeeStudios,
+        built by Nicole Forbes
+      </p>
+    </div>
+    <script src="/javascript/data.js"></script>
+
+    <script src="/javascript/cart.js"></script>
+  </body>
+</html>
